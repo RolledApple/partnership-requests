@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-class-generator"
+}
+
+generator gen {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model PartnershipRequest {
+  id          Int    @id @default(autoincrement())
+  companyName String
+  email       String
+}
