@@ -5,5 +5,5 @@ $ docker compose up
 ```
 
 # API docs
-[Link to Swagger documentation](localhost:8100/api-docs)
+[Link to Swagger documentation](http://localhost:8100/api-docs)
 
